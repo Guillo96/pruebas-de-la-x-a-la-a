@@ -1,0 +1,861 @@
+.oculta{
+  display: none !important;
+}
+/*Asignación de variables stylus*/
+/*Fuente de iconos*/
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?ur6zg0");
+  src: url("../fonts/icomoon.eot?#iefixur6zg0") format('embedded-opentype'), url("../fonts/icomoon.woff?ur6zg0") format('woff'), url("../fonts/icomoon.ttf?ur6zg0") format('truetype'), url("../fonts/icomoon.svg?ur6zg0#icomoon") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+/* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-checkmark:before {
+  content: "\e601";
+  color: #008000;
+}
+.icon-plus:before {
+  content: "\e602";
+  color: #f00;
+}
+.icon-arrow-right:before {
+  content: "\e603";
+  font-weight: bold;
+  color: #2281d2;
+}
+.icon-close:before {
+  content: "\e600";
+}
+/*Estilos índices energéticos*/
+html {
+  background-color: #2281d2;
+}
+html body {
+  background-color: #2281d2;
+  color: #4b4b4b;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+html body .container {
+  background-color: #fff;
+  border-radius: 1em;
+  margin-top: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 3%;
+}
+html body .container .indicesEnergeticos {
+  background-color: #fff;
+  border-radius: 1em;
+}
+html body .container .indicesEnergeticos header {
+  border-radius: 1em 1em 0 0;
+}
+html body .container .indicesEnergeticos header .cabecera {
+  background-color: colorGriss;
+  border-radius: 1em 1em 0 0;
+  height: 11em;
+  position: relative;
+  width: 100%;
+}
+html body .container .indicesEnergeticos header .cabecera .logo {
+  border-radius: 0 1em 0 0;
+  padding: 0.5em;
+  position: absolute;
+  right: 0.1em;
+}
+html body .container .indicesEnergeticos header .menu-bar {
+  background-color: #003865;
+  border-radius: 1em 1em 0 0;
+  height: 3em;
+  padding: 0.5em;
+  position: relative;
+  top: -1em;
+}
+html body .container .indicesEnergeticos header .menu-bar .login {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  padding: 0.5em;
+  position: absolute;
+  right: 0;
+}
+html body .container .indicesEnergeticos header .menu-bar .login a {
+  color: #e6e6e6;
+  text-decoration: none;
+}
+html body .container .indicesEnergeticos header .consulta {
+  background-color: #fff;
+  border-radius: 1em 1em 0 0;
+  color: #e87722;
+  margin: 0;
+  padding: 3em 7em 0 7em;
+  position: relative;
+  top: -2em;
+}
+html body .container .indicesEnergeticos header .consulta h4 {
+  color: #003865;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 0 0 1em 0;
+  padding: 0.5em;
+  text-align: left;
+  text-transform: uppercase;
+}
+html body .container .indicesEnergeticos header .consulta form div .consultaFechaInicial {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0.5em;
+}
+html body .container .indicesEnergeticos header .consulta form div .consultaFechaInicial .inFechaInicial {
+  border-radius: 0.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.5em;
+}
+html body .container .indicesEnergeticos header .consulta form div .consultaFechaFinal {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0.5em;
+}
+html body .container .indicesEnergeticos header .consulta form div .consultaFechaFinal .inFechaFinal {
+  border-radius: 0.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.5em;
+}
+html body .container .indicesEnergeticos header .consulta form div .botonConsultar {
+  display: inline-block;
+  margin: 0.5em;
+  text-align: center;
+}
+html body .container .indicesEnergeticos header .consulta form div .botonConsultar .btnConsultar {
+  background-color: #2281d2;
+  border-radius: 0.5em;
+  border-style: none;
+  box-shadow: 0.1em 0.1em 0.2em #2281d2;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+html body .container .indicesEnergeticos header .consulta form div .botonConsultar .btnConsultar:active {
+  background-color: #5bc2e7;
+}
+html body .container .indicesEnergeticos header .consulta form div .botonConsultar .btnConsultar:hover {
+  background-color: #5bc2e7;
+}
+html body .container .indicesEnergeticos header .valorIndicadores {
+  background-color: #2281d2;
+  border: 0.1em;
+  border-color: #2281d2;
+  border-radius: 0.2em 0.2em 0 0;
+  border-style: solid;
+  margin: 0 0 0 7.5em;
+  padding: 0;
+  text-align: center;
+}
+html body .container .indicesEnergeticos header .valorIndicadores .tituloPanel {
+  background-color: #2281d2;
+  color: #fff;
+  padding: 0.2em;
+}
+html body .container .indicesEnergeticos header .valorIndicadores .tituloPanel .colPanel {
+  border-color: #2281d2;
+  border-style: solid;
+  border-width: 0.1em;
+  display: table-cell;
+  padding: 0.2em;
+  text-align: left;
+}
+html body .container .indicesEnergeticos header .valorIndicadores .tituloPanel .cerrarValorIndicadores .botonCerrarIndicador {
+  border-radius: 1em;
+  border-style: none;
+  box-shadow: 0.1em 0.1em 0.2em #003865;
+  color: #003865;
+  font-size: 0.8em;
+  padding: 0.5em;
+  background-color: #fff;
+}
+html body .container .indicesEnergeticos header .valorIndicadores .tituloPanel .cerrarValorIndicadores .botonCerrarIndicador:active {
+  background-color: #5bc2e7;
+}
+html body .container .indicesEnergeticos header .valorIndicadores .tituloPanel .cerrarValorIndicadores .botonCerrarIndicador:hover {
+  background-color: #5bc2e7;
+}
+html body .container .indicesEnergeticos header .valorIndicadores .tituloIndicadores {
+  background-color: #2281d2;
+  color: #003865;
+  font-size: 1em;
+  font-weight: normal;
+}
+html body .container .indicesEnergeticos header .valorIndicadores .fila {
+  display: table-row;
+}
+html body .container .indicesEnergeticos header .valorIndicadores .fila .col {
+  background-color: #fff;
+  border-color: #2281d2;
+  border-style: solid;
+  border-width: 0.1em;
+  display: table-cell;
+  padding: 0.2em;
+  text-align: left;
+}
+html body .container .indicesEnergeticos header .valorIndicadores .fila .riesgo {
+  background-color: #f00;
+  content: '&nbsp:';
+}
+html body .container .indicesEnergeticos header .valorIndicadores .fila .normal {
+  background-color: #008000;
+  content: '&nbsp:';
+}
+html body .container .indicesEnergeticos header .valorIndicadores .fila .vigilancia {
+  background-color: #e87722;
+  content: '&nbsp:';
+}
+html body .container .indicesEnergeticos header .publicacion {
+  border: 0.1em;
+  border-color: #2281d2;
+  border-radius: 0.2em 0.2em 0 0;
+  border-style: solid;
+  margin: 0 0 0 7.5em;
+  padding: 0;
+}
+html body .container .indicesEnergeticos header .publicacion .oculta {
+  display: none;
+}
+html body .container .indicesEnergeticos header .publicacion .visible {
+  display: table;
+}
+html body .container .indicesEnergeticos header .publicacion .tituloPanel {
+  color: #fff;
+  background-color: #2281d2;
+  border-radius: 0.2em 0.2em 0 0;
+  padding: 0.2em;
+}
+html body .container .indicesEnergeticos header .publicacion form div #publicacionHidden {
+  display: none;
+}
+html body .container .indicesEnergeticos header .publicacion form div .fechaPublicacion {
+  color: #e87722;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 1em;
+}
+html body .container .indicesEnergeticos header .publicacion form div .fechaPublicacion .inFechaPublicacion {
+  border-radius: 0.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+html body .container .indicesEnergeticos header .publicacion form div .botonPublicar {
+  display: inline-block;
+  margin: 1em;
+  padding: 0.3em;
+}
+html body .container .indicesEnergeticos header .publicacion form div .botonPublicar .btnpPublicar {
+  background-color: #2281d2;
+  border-radius: 0.5em;
+  border-style: none;
+  box-shadow: 0.1em 0.1em 0.2em #2281d2;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+html body .container .indicesEnergeticos header .publicacion form div .botonPublicar .btnpPublicar:active {
+  background-color: #5bc2e7;
+}
+html body .container .indicesEnergeticos header .publicacion form div .botonPublicar .btnpPublicar:hover {
+  background-color: #5bc2e7;
+}
+html body .container .indicesEnergeticos header .publicacion form div .botonCancelar {
+  display: inline-block;
+  padding: 0.3em;
+}
+html body .container .indicesEnergeticos header .publicacion form div .botonCancelar .btnCancelar {
+  background-color: #2281d2;
+  border-radius: 0.5em;
+  border-style: none;
+  box-shadow: 0.1em 0.1em 0.2em #2281d2;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+html body .container .indicesEnergeticos header .publicacion form div .botonCancelar .btnCancelar:active {
+  background-color: #5bc2e7;
+}
+html body .container .indicesEnergeticos header .publicacion form div .botonCancelar .btnCancelar:hover {
+  background-color: #5bc2e7;
+}
+html body .container .indicesEnergeticos header .oculta {
+  display: none;
+}
+html body .container .indicesEnergeticos header .visible {
+  display: table;
+}
+html body .container .indicesEnergeticos main {
+  border-radius: 0 0 1em 1em;
+}
+html body .container .indicesEnergeticos main .contenedorTabla {
+  margin: 0.5em;
+  padding: 0 7em;
+}
+html body .container .indicesEnergeticos main .contenedorTabla div {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 3em;
+}
+html body .container .indicesEnergeticos main .contenedorTabla div .tablaIndicesEnergeticos {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+}
+html body .container .indicesEnergeticos main .contenedorTabla div .tablaIndicesEnergeticos thead {
+  background-color: #2281d2;
+}
+html body .container .indicesEnergeticos main .contenedorTabla div .tablaIndicesEnergeticos thead .tituloTabla {
+  color: #fff;
+  font-size: 1em;
+  font-weight: normal;
+}
+html body .container .indicesEnergeticos main .contenedorTabla div .tablaIndicesEnergeticos thead .tituloTabla td {
+  padding: 0.2em;
+}
+html body .container .indicesEnergeticos main .contenedorTabla div .tablaIndicesEnergeticos .filasTabla tr td .tituloColumnaIndice {
+  display: none;
+}
+html body .container .indicesEnergeticos main .contenedorTabla div .tablaIndicesEnergeticos .filasTabla tr td .boton {
+  background-color: #fff;
+  border-radius: 1em;
+  border-style: none;
+  box-shadow: 0.1em 0.1em 0.2em #2281d2;
+  font-size: 0.8em;
+  padding: 0.5em;
+}
+html body .container .indicesEnergeticos main .contenedorTabla div .tablaIndicesEnergeticos .filasTabla tr td .boton:active {
+  background-color: #5bc2e7;
+}
+html body .container .indicesEnergeticos main .contenedorTabla div .tablaIndicesEnergeticos .filasTabla tr td .boton:hover {
+  background-color: #5bc2e7;
+}
+html body .container .indicesEnergeticos main .contenedorTabla div .tablaIndicesEnergeticos .filasTabla tr .radioIndice {
+  display: none;
+}
+html body .container .indicesEnergeticos footer {
+  display: none;
+  width: 100%;
+}
+html body .container .indicesEnergeticos footer .opciones {
+  background-color: #2281d2;
+  margin: 0.5em;
+  padding: 0.5em;
+  width: 100%;
+}
+html body .container .indicesEnergeticos footer .opciones button {
+  background-color: #2281d2;
+  color: #fff;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin: 0;
+}
+html body #modal {
+  background-color: rgba(108,102,108,0.6);
+  display: none;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+html body #modal #idCircularG {
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 10em;
+  width: 50px;
+}
+html body #modal #idCircularG .circularG {
+  background-color: #2281d2;
+  border-radius: 8px;
+  height: 11px;
+  position: absolute;
+  width: 11px;
+  -moz-border-radius: 8px;
+  -moz-animation-name: bounce_circularG;
+  -moz-animation-duration: 0.48s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: linear;
+  -webkit-border-radius: 8px;
+  -webkit-animation-name: bounce_circularG;
+  -webkit-animation-duration: 0.48s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: linear;
+  -ms-border-radius: 8px;
+  -ms-animation-name: bounce_circularG;
+  -ms-animation-duration: 0.48s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-direction: linear;
+  -o-border-radius: 8px;
+  -o-animation-name: bounce_circularG;
+  -o-animation-duration: 0.48s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-direction: linear;
+  animation-name: bounce_circularG;
+  animation-duration: 0.48s;
+  animation-iteration-count: infinite;
+  animation-direction: linear;
+}
+html body #modal #idCircularG #circularG_1 {
+  left: 0;
+  top: 20px;
+  -moz-animation-delay: 0.18s;
+  -webkit-animation-delay: 0.18s;
+  -ms-animation-delay: 0.18s;
+  -o-animation-delay: 0.18s;
+  animation-delay: 0.18s;
+}
+html body #modal #idCircularG #circularG_2 {
+  left: 5px;
+  top: 5px;
+  -moz-animation-delay: 0.24s;
+  -webkit-animation-delay: 0.24s;
+  -ms-animation-delay: 0.24s;
+  -o-animation-delay: 0.24s;
+  animation-delay: 0.24s;
+}
+html body #modal #idCircularG #circularG_3 {
+  top: 0;
+  left: 20px;
+  -moz-animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+  -ms-animation-delay: 0.3s;
+  -o-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+html body #modal #idCircularG #circularG_4 {
+  right: 5px;
+  top: 5px;
+  -moz-animation-delay: 0.36s;
+  -webkit-animation-delay: 0.36s;
+  -ms-animation-delay: 0.36s;
+  -o-animation-delay: 0.36s;
+  animation-delay: 0.36s;
+}
+html body #modal #idCircularG #circularG_5 {
+  right: 0;
+  top: 20px;
+  -moz-animation-delay: 0.42s;
+  -webkit-animation-delay: 0.42s;
+  -ms-animation-delay: 0.42s;
+  -o-animation-delay: 0.42s;
+  animation-delay: 0.42s;
+}
+html body #modal #idCircularG #circularG_6 {
+  right: 5px;
+  bottom: 5px;
+  -moz-animation-delay: 0.48s;
+  -webkit-animation-delay: 0.48s;
+  -ms-animation-delay: 0.48s;
+  -o-animation-delay: 0.48s;
+  animation-delay: 0.48s;
+}
+html body #modal #idCircularG #circularG_7 {
+  left: 20px;
+  bottom: 0;
+  -moz-animation-delay: 0.54s;
+  -webkit-animation-delay: 0.54s;
+  -ms-animation-delay: 0.54s;
+  -o-animation-delay: 0.54s;
+  animation-delay: 0.54s;
+}
+html body #modal #idCircularG #circularG_8 {
+  left: 5px;
+  bottom: 5px;
+  -moz-animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+  -ms-animation-delay: 0.6s;
+  -o-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+html body .mensaje {
+  background-color: #e6e6e6;
+  border-radius: 1em;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+html body .mensaje .mensajeExito {
+  background-color: #e6e6e6;
+  border-radius: 0.5em;
+  color: #4b4b4b;
+  display: none;
+  font-size: tamanioFuentes;
+  height: 1em;
+  padding: 0.3em;
+  text-align: center;
+}
+html body .mensaje .mensajeError {
+  background-color: #e6e6e6;
+  border-radius: 0.5em;
+  color: #4b4b4b;
+  display: none;
+  font-size: 1em;
+  height: 1.5em;
+  padding: 0.5em 0 1em 1em;
+  text-align: center;
+}
+html body .mensaje .mensajeError .botonCerrar {
+  display: inline-block;
+}
+html body .mensaje .mensajeError .botonCerrar button {
+  background-color: #fff;
+  border-radius: 1em;
+  border-style: none;
+  box-shadow: 0.1em 0.1em 0.2em #2281d2;
+  color: #2281d2;
+  padding: 0.5em;
+}
+html body .mensaje .mensajeError .botonCerrar button:active {
+  background-color: #5bc2e7;
+}
+html body .mensaje .mensajeError .botonCerrar button:hover {
+  background-color: #5bc2e7;
+}
+html body .mensaje .mensajeError .error {
+  color: #f00;
+  display: inline-block;
+  padding: 0.3em;
+  text-align: center;
+}
+html body .URLServicios {
+  display: none;
+}
+html body .ERRORESResources {
+  display: none;
+}
+/*Animaciones*/
+/*Media Querys*/
+/*Tabletas y computadores de escritorio medianos*/
+@media screen and (min-width: 992px) and (max-width: 1199px), (orientation: portrait) {
+  html body {
+    background-color: #2281d2;
+  }
+  html body .container .indicesEnergeticos header .consulta {
+    font-size: 0.8em;
+  }
+  html body .container .indicesEnergeticos header .consulta form div .botonConsultar .btnConsultar {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+  }
+  html body .container .indicesEnergeticos header .valorIndicadores {
+    font-size: 0.8em;
+    margin-left: 7.5em;
+  }
+  html body .container .indicesEnergeticos header .publicacion {
+    font-size: 0.8em;
+    margin-left: 7.5em;
+  }
+  html body .container .indicesEnergeticos header .publicacion form div .fechaPublicacion .inFechaPublicacion {
+    padding: 0.5em;
+  }
+  html body .container .indicesEnergeticos header .publicacion form div .botonPublicar {
+    margin-left: 2em;
+  }
+  html body .container .indicesEnergeticos header .publicacion form div .botonPublicar .btnpPublicar {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+  }
+  html body .container .indicesEnergeticos header .publicacion form div .botonCancelar .btnCancelar {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+  }
+  html body .container .indicesEnergeticos main .contenedorTabla {
+    margin: 0;
+    padding: 2em 6em 0 6em;
+  }
+  html body .container .indicesEnergeticos main .contenedorTabla div .tablaIndicesEnergeticos {
+    font-size: 0.8em;
+  }
+}
+/*Tabletas y computadores de escritorio pequeñas*/
+@media screen and (min-width: 768px) and (max-width: 991px), (orientation: portrait) {
+  html body {
+    background-color: #2281d2;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  html body .container {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  html body .container .indicesEnergeticos header .consulta form div .consultaFechaInicial {
+    margin: 0;
+  }
+  html body .container .indicesEnergeticos header .consulta form div .consultaFechaInicial .inFechaInicial {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  html body .container .indicesEnergeticos header .consulta form div .consultaFechaFinal {
+    margin: 0;
+  }
+  html body .container .indicesEnergeticos header .consulta form div .consultaFechaFinal .inFechaFinal {
+    margin-left: 0.6em;
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  html body .container .indicesEnergeticos header .consulta form div .botonConsultar {
+    margin-left: 40%;
+  }
+  html body .container .indicesEnergeticos header .consulta form div .botonConsultar .btnConsultar {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}
+/* Teléfonos celulares y tabletas */
+@media screen and (max-width: 767px), (orientation: portrait) {
+  html body {
+    background-color: #2281d2;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  html body .container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  html body .container .indicesEnergeticos header .consulta form div .consultaFechaInicial {
+    margin: 0;
+  }
+  html body .container .indicesEnergeticos header .consulta form div .consultaFechaInicial .inFechaInicial {
+    padding-left: 9em;
+    padding-right: 9em;
+  }
+  html body .container .indicesEnergeticos header .consulta form div .consultaFechaFinal {
+    margin: 0;
+  }
+  html body .container .indicesEnergeticos header .consulta form div .consultaFechaFinal .inFechaFinal {
+    margin: 0.8em;
+    padding-left: 9em;
+    padding-right: 9em;
+  }
+  html body .container .indicesEnergeticos header .consulta form div .botonConsultar {
+    margin-left: 30%;
+  }
+  html body .container .indicesEnergeticos header .consulta form div .botonConsultar .btnConsultar {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}
+/* Teléfonos celulares */
+@media screen and (max-width: 480px), (orientation: portrait) {
+  html body {
+    background-color: #fff;
+    margin: 0;
+  }
+  html body .container {
+    background-color: #fff;
+    margin: 0;
+  }
+  html body .container .indicesEnergeticos header .consulta form div .consultaFechaInicial {
+    display: block;
+    margin: 0;
+  }
+  html body .container .indicesEnergeticos header .consulta form div .consultaFechaInicial .inFechaInicial {
+    margin: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  html body .container .indicesEnergeticos header .consulta form div .consultaFechaFinal {
+    display: block;
+    margin: 0;
+  }
+  html body .container .indicesEnergeticos header .consulta form div .consultaFechaFinal .inFechaFinal {
+    margin: 0.5em;
+    margin-left: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  html body .container .indicesEnergeticos header .consulta form div .botonConsultar {
+    margin: 0;
+  }
+  html body .container .indicesEnergeticos header .consulta form div .botonConsultar .btnConsultar {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  html body .container .indicesEnergeticos header .publicacion form div .fechaPublicacion .inFechaPublicacion {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  html body .container .indicesEnergeticos header .publicacion form div .botonPublicar {
+    margin: 0.3em;
+  }
+  html body .container .indicesEnergeticos header .publicacion form div .botonPublicar .btnpPublicar {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  html body .container .indicesEnergeticos header .publicacion form div .botonCancelar .btnCancelar {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  html body .container .indicesEnergeticos h4 {
+    margin: 0;
+  }
+  html body .container .indicesEnergeticos main .contenedorTabla {
+    border: 0;
+    margin: 0;
+    margin-bottom: 3em;
+    padding: 0;
+    position: relative;
+  }
+  html body .container .indicesEnergeticos main .contenedorTabla div .tablaIndicesEnergeticos {
+    background-color: #e87722;
+    border-spacing: 0.2em;
+  }
+  html body .container .indicesEnergeticos main .contenedorTabla div .tablaIndicesEnergeticos thead {
+    display: none;
+  }
+  html body .container .indicesEnergeticos main .contenedorTabla div .tablaIndicesEnergeticos .filasTabla {
+    background-color: #fff;
+  }
+  html body .container .indicesEnergeticos main .contenedorTabla div .tablaIndicesEnergeticos .filasTabla tr .procesoID {
+    display: table-cell;
+  }
+  html body .container .indicesEnergeticos main .contenedorTabla div .tablaIndicesEnergeticos .filasTabla tr .datoIndice {
+    display: table-row;
+    right: 0;
+  }
+  html body .container .indicesEnergeticos main .contenedorTabla div .tablaIndicesEnergeticos .filasTabla tr .datoIndice .tituloColumnaIndice {
+    display: inline-block;
+  }
+  html body .container .indicesEnergeticos main .contenedorTabla div .tablaIndicesEnergeticos .filasTabla tr .opcionIndice {
+    display: none;
+  }
+  html body .container .indicesEnergeticos main .contenedorTabla div .tablaIndicesEnergeticos .filasTabla tr .radioIndice {
+    display: table-cell;
+  }
+  html body .container .indicesEnergeticos footer {
+    display: block;
+  }
+  html body .container .indicesEnergeticos footer .opciones {
+    background-color: transparent;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    right: 0;
+    z-index: 999;
+  }
+  html body .container .indicesEnergeticos footer .opciones button {
+    border: 0;
+    border-radius: 0.5em 0.5em 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0;
+    margin-left: 0.2em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 48%;
+  }
+  html body .container .indicesEnergeticos footer .opciones button:active {
+    background-color: #5bc2e7;
+  }
+  html body .container .indicesEnergeticos footer .opciones button:hover {
+    background-color: #5bc2e7;
+  }
+}
+@-moz-keyframes bounce_circularG {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.3);
+  }
+}
+@-webkit-keyframes bounce_circularG {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.3);
+  }
+}
+@-o-keyframes bounce_circularG {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.3);
+  }
+}
+@-ms-keyframes bounce_circularG {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.3);
+  }
+}
+@keyframes bounce_circularG {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.3);
+  }
+}

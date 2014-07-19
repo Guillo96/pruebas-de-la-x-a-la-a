@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="name" content="content">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Índices Energéticos XM</title>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!--<script type="text/javascript" src="lib/jquery-2.1.1.min.js"></script>-->
+    <script type="text/javascript" src="lib/jquery.mockjax.js"></script>
+    <script type="text/javascript" src="js/conexion.js"></script>
+    <script type="text/javascript" src="js/indicesEnergeticosInit.js"></script>
+    <script type="text/javascript" src="js/indicesEnergeticosModelo.js"></script>
+    <script type="text/javascript" src="js/indicesEnergeticosControlador.js"></script>
+    <script type="text/javascript" src="js/indicesEnergeticosVista.js"></script>
+    <link rel="stylesheet" href="css/indicesEnergeticos.css">
+  </head>
+  <body>
+    <div class="mensaje">
+      <div class="mensajeExito">
+        <div class="icon-checkmark"></div>
+      </div>
+      <div class="mensajeError">
+        <div class="error icon-close"></div>
+        <div class="botonCerrar"><button type="" class="icon-close"></button></div>
+      </div>
+    </div>
+    <div class="container">
+    </div>
+    <!-- <header>
+      <!-- /header -->
+    <!-- </header>-->
+    <!-- <main>-->
+      <!-- /main -->
+    <!-- </main>-->
+    <!-- <footer>-->
+      <!-- /footer-->
+    <!-- </footer>-->
+    <div id="modal">
+      <div id="idCircularG">
+        <div id="circularG_1" class="circularG"></div>
+        <div id="circularG_2" class="circularG"></div>
+        <div id="circularG_3" class="circularG"></div>
+        <div id="circularG_4" class="circularG"></div>
+        <div id="circularG_5" class="circularG"></div>
+        <div id="circularG_6" class="circularG"></div>
+        <div id="circularG_7" class="circularG"></div>
+        <div id="circularG_8" class="circularG"></div>
+      </div>      
+    </div>
+    <div class="URLServicios">
+      <input type="hidden" id="servicioHost" value="IEProxyServicios.aspx">
+      <!--/indicesEnergeticosJSON-->
+      <!--//comedvsrv27:83/IndicesEnergeticosdllo/ConsultaIndicesEnergeticos.svc/ConsultarIndicesEnergeticos/2014-6-20/2014-7-20-->
+      <input type="hidden" id="servicioIndicesEnergeticos" value="indicesEnergeticosJSON">
+      <input type="hidden" id="servicioIndicesEnergeticosPublicacion" value="IndicesEnergeticosPublicacion">
+      <input type="hidden" id="servicioIndicesEnergeticosDetalle" value="DetalleIndice">
+
+      <!--@deprecated No se consultan estos servicios desde la consulta de indices-->
+      <!--
+      <input type="hidden" id="servicioAnalisisEnergetico" value="/AnalisisEnergeticos">
+      -->
+      <!--
+      <input type="hidden" id="servicioEnergiaDisponible" value="/EnergiaDisponible">
+      -->
+      <!--
+      <input type="hidden" id="servicioCondicionSistema" value="/CondicionSistema">
+      -->
+      <!--
+      <input type="hidden" id="servicioPrecioBolsaPromedio" value="/PrecioBolsaPromedio">
+      -->
+    </div>
+    <!--
+    <div class="ERRORESResources">
+      <input type="hidden" id="errorIndicesEnergeticos" value="/IndicesEnergeticos">
+      <input type="hidden" id="errorIndicesEnergeticosPublicacion" value="/IndicesEnergeticosPublicacion">
+      <input type="hidden" id="errorIndicesEnergeticosDetalle" value="/DetalleIndice">
+      <input type="hidden" id="errorAnalisisEnergetico" value="/AnalisisEnergeticos">
+      <input type="hidden" id="errorEnergiaDisponible" value="/EnergiaDisponible">
+      <input type="hidden" id="errorCondicionSistema" value="/CondicionSistema">
+      <input type="hidden" id="errorPrecioBolsaPromedio" value="/PrecioBolsaPromedio">
+    </div>
+    -->
+  </body>
+</html>
+

@@ -1,0 +1,97 @@
+<section class="indicesEnergeticos">
+  <header>
+    <div class="cabecera">
+      <img class="logo" src="Imagenes/logo-xm.png">
+    </div>
+    <div class="menu-bar">
+      <div class="login"> <a href="#" title="">Inicio sesión</a></div>
+    </div>
+    <section class="consulta">
+      <h4>Consulta de índices</h4>
+      <form>
+        <div>
+          <div class="consultaFechaInicial">
+            <label for="fechaInicial">Fecha inicial: </label>
+            <input id="fechaInicial" type="date" max="" class="inFechaInicial" required/>
+          </div>
+          <div class="consultaFechaFinal">
+            <label for="fechaInicial">Fecha final: </label>
+            <input id="fechaFinal" type="date" max="" class="inFechaFinal" required/>
+          </div>
+          <div class="botonConsultar">
+             <button id="consultar" class="btnConsultar">Consultar</button>
+          </div>
+        </div>
+      </form>
+    </section>
+    <section class="valorIndicadores oculto">
+        <div class="fila tituloPanel">
+          <div class="colPanel">Valor indicadores</div>          
+          <span class="cerrarValorIndicadores">
+            <button id="btnCerrarValorIndicadores" class="botonCerrarIndicador icon-close" type="button" ></button>
+          </span>
+        </div>
+        <div class="fila tituloIndicadores">
+          <div class="col">Indicador</div>
+          <div class="col">Valor</div>
+        </div>
+        <div class="fila contenidoIndicadores">
+          <div class="col nombreIndicador">ED</div>
+          <div id="detalleED" class="col valorIndicador"></div>
+        </div>
+        <div class="fila contenidoIndicadores">
+          <div class="col nombreIndicador">PBP</div>
+          <div id="detallePBP" class="col valorIndicador normal"></div>
+        </div>
+        <div class="fila contenidoIndicadores">
+          <div class="col nombreIndicador">AE</div>
+          <div id="detalleAE" class="col valorIndicador riesgo normal"></div>
+        </div>
+        <div class="fila contenidoIndicadores">
+          <div class="col nombreIndicador">HSIN</div>
+          <div id="detalleHSIN" class="col valorIndicador"></div>
+        </div>
+      <!--</div>-->
+    </section>
+    <section class="publicacion oculto">
+      <div class="tituloPanel">Publicación</div>
+      <form>
+        <div>
+          <input type="hidden" id="idPublicacionHidden" name="idPublicacionHidden" value="">
+          <input type="hidden" id="idSeleccionHidden" name="idSeleccionHidden" value="">
+          <div class="fechaPublicacion">
+            <label for="fechaPublicacion">Fecha vigencia: </label>
+            <input id="fechaPublicacion" type="date" class="inFechaPublicacion" min="" required/>
+          </div>
+          <div class="botonPublicar">
+            <button type="button" id="publicarIndice" class="btnpPublicar">Publicar</button>
+          </div>
+          <div class="botonCancelar">
+            <button type="button" id="cancelarIndice" class="btnCancelar">Cancelar</button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </header>
+  <main>
+	  <div class="contenedorTabla">
+	    <div>
+	      <table id="tablaIndicesEnergeticos" class="tablaIndicesEnergeticos">
+	        <thead>
+	          <tr id="tituloTabla" class="tituloTabla"></tr>
+	        </thead>
+	        <tbody id="filasTabla" class="filasTabla"></tbody>
+	      </table>
+	    </div>
+	  </div>
+  </main>
+  <footer>
+    <div class="opciones">   
+      <button class="btnDetalle" id="verDetalleIndiceSel">Detalle</button>
+      <button class="btnPublicar" id="publicarIndiceSel">Publicar</button>
+    <!--
+      <button class="btnReportes" id="verReportesIndiceSel">Reportes</button>
+    -->
+    </div>
+  </footer>
+</section>
